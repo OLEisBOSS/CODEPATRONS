@@ -1,0 +1,241 @@
+html {
+    margin: 0px 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px 0px;
+}
+
+header {
+    position: relative;
+    height: 80vh;
+    background-image: url(../resources/images/joan-gamell-ZS67i1HLllo-unsplash.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header1 {
+    position: sticky;
+    top: 0px;
+    width: 80%;
+    height: 50px;
+    background-color: black; 
+    border-radius: 8px;
+    border-bottom: 2px solid goldenrod;
+    border-right: 1px solid goldenrod;
+    border-left: 1px solid goldenrod;
+    margin: 0px auto;
+}
+
+nav {
+    width: 40%;
+    height: 50px;
+    color: white;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    padding: 0px 8%;
+    transition: color 750ms ease-out 0.2s, box-shadow 250ms ease-out, border-left 250ms ease-out;
+    border-radius: 8px;
+    box-shadow: 0px 2px rgb(253, 249, 249);
+    border-left: 1.5px solid goldenrod;
+}
+
+nav li:hover {
+    color: goldenrod;
+}
+
+nav li:active {
+    box-shadow: 0px 0.5px rgb(253, 249, 249);
+    border-left: 0.1px solid goldenrod;
+
+}
+
+nav li+li {
+    border-left: 1px solid goldenrod;
+}
+.header1 h1 {
+    display: inline-block;
+    padding-left: 2%;
+    color: goldenrod;
+    margin: 0px;
+    line-height: 50px;
+    text-shadow: 2px 2px white, -2px -2px white;
+}
+
+.text-box-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box {
+    position: relative;
+    width: 30%;
+}
+
+#span-1, #span-3 {
+    display: block;
+    color: rgb(180, 173, 173);
+    text-align: left;
+    font-weight: 100;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+#span-3 {
+    text-align: right;
+    color: gold;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.text-box h1 {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.text-box h1::after {
+    position: absolute;
+    content: ' ';
+    height: 54px;
+    right: 0;
+    top: 4px;
+    width: 90px;
+    border-right: 1px dotted goldenrod;
+    border-top: 1px dotted goldenrod;
+}
+
+.text-box h1::before {
+    position: absolute;
+    content: ' ';
+    height: 54px;
+    left: 0;
+    bottom: 4px;
+    width: 90px;
+    border-left: 1px dotted goldenrod;
+    border-bottom: 1px dotted goldenrod;
+}
+
+#line {
+    position: absolute;
+    bottom: 0px;
+    height: 5px;
+    width: 32%;
+    background-color: goldenrod;
+    left: 5%;    
+}
+
+#hire {
+    background-color: goldenrod;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0px;
+    right: 15%;
+    transform: translateY(50%);
+    padding: 13px 19px;
+    text-align: center;
+}
+
+#hire::before {
+    content: '';
+    position: absolute;
+    border-radius: 8px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: goldenrod;
+    transform: scaleX(0);
+    transition: transform 750ms;
+    z-index: 2;
+}
+
+#hire:hover::before {
+    transform: scale(1);
+    transform-origin: left;
+}
+
+#hire:hover i {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  } 
+
+#hire p {
+    position: relative;
+    display: inline;
+    margin-right: 4px;
+  }
+
+#hire i {
+    position: absolute;
+    right: 7px;
+    transition: transform 750ms, left 750ms, position 750ms;
+    z-index: 10;
+}
+
+.letter {
+    position: relative;
+    display: inline-block;
+    transition: all 250ms ease-in;
+}
+
+#span-2:hover > .letter:nth-child(1) {
+    color: goldenrod;
+    transform: translate(-4px, -5px) rotate(180deg);
+}
+
+#span-2:hover > .letter:nth-child(2) {
+    transform: translateY(7px) rotate(7deg);
+}
+#span-2:hover > .letter:nth-child(3) {
+    transform: translateY(-7px) rotate(-7deg);
+}
+#span-2:hover > .letter:nth-child(4) {
+    transform: translateY(7px) rotate(7deg);
+}
+#span-2:hover > .letter:nth-child(5) {
+    transform: translateY(-7px) rotate(-7deg);
+
+}
+#span-2:hover > .letter:nth-child(6) {
+    transform: translateY(7px) rotate(7deg);
+}
+#span-2:hover > .letter:nth-child(7) {
+    transform: translateY(-7px) rotate(-7deg);
+}
+#span-2:hover > .letter:nth-child(8) {
+    transform: translateY(7px) rotate(7deg);
+}
+#span-2:hover > .letter:nth-child(9) {
+    transform: translateY(-7px) rotate(-7deg);
+
+}
+#span-2:hover > .letter:nth-child(10) {
+    transform: translateY(7px) rotate(7deg);
+}
+
+#span-2:hover > .letter:nth-child(11) {
+    color: goldenrod;
+    transform: translate(4px, -5px) rotate(7deg);
+
+}
