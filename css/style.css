@@ -9,6 +9,7 @@ body {
     margin: 0px 0px;
 }
 
+/*header */
 header {
     position: relative;
     height: 80vh;
@@ -23,6 +24,7 @@ header {
 
 .header1 {
     position: sticky;
+    z-index: 100;
     top: 0px;
     width: 80%;
     height: 50px;
@@ -184,6 +186,7 @@ nav li+li {
     position: relative;
     display: inline;
     margin-right: 4px;
+    font-weight: 700;
   }
 
 #hire i {
@@ -239,3 +242,85 @@ nav li+li {
     transform: translate(4px, -5px) rotate(7deg);
 
 }
+
+/*about me section */
+
+#about-me > h2{
+    text-align: center;
+    margin-top: 55px;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+
+#about-me div {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+#about-me div > hr{
+    border: none;
+    border-bottom: 1px solid goldenrod;
+    margin: 2rem auto;
+    width: 6%;
+}
+
+#about-me div > hr::before {
+    border-bottom: 1px solid goldenrod;
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3.5%;
+}
+
+#about-me p {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color:#252525;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.clickable {
+    color: goldenrod;
+    text-decoration: none;
+    transform: all 300ms ease-in;
+}
+
+.clickable:hover {
+    text-decoration: underline;
+}
+
+#clickable {
+    color: goldenrod;
+}
+
+#figure {
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px;
+    display: none;
+}
+
+#about-me figure img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#about-me figcaption {
+    text-align: center;
+    letter-spacing: 1px;
+    color:#252525;
+    font-weight: 700;
+}
+
