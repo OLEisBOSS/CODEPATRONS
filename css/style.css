@@ -25,7 +25,9 @@ header {
 }
 
 .header1 {
-    position: sticky;
+    position: fixed;
+    transform: translateX(-50%);
+    left: 50%;
     z-index: 100;
     top: 0px;
     width: 80%;
@@ -35,7 +37,6 @@ header {
     border-bottom: 2px solid goldenrod;
     border-right: 1px solid goldenrod;
     border-left: 1px solid goldenrod;
-    margin: 0px auto;
 }
 
 nav {
@@ -251,7 +252,7 @@ nav li+li {
 
 .subheader{
     text-align: center;
-    margin-top: 4.2rem;
+    padding-top: 4.2rem;
     font-size: 2rem;
     font-weight: 700;
     font-size: 1.7rem;
@@ -290,6 +291,7 @@ nav li+li {
     font-size: 1.2rem;
     line-height: 1.5rem;
     letter-spacing: 1px;
+    padding-bottom: 30px;
 }
 
 .clickable {
@@ -333,11 +335,16 @@ nav li+li {
 
 /*services-grid-section*/
 
+.background {
+    background-color: #f4f3f3;
+}
+
 .grid {
     display: grid;
     padding-top: 8px;
+    padding-bottom: 30px;
     margin: 0px 65px;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     'one two'
@@ -378,4 +385,85 @@ nav li+li {
 .grid p {
     font-size: 1.2rem;
     line-height: 1.8rem;    
+}
+
+/*contact-section*/
+#contact {
+    margin-bottom: 50px;
+}
+#contact h3 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: normal;
+    text-align: center;
+    color: gray;    
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'eins eins'
+    'zwei drei'
+    'vier vier'
+    'fünf fünf';
+    width: 60%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.eins{
+    grid-area: eins;
+}
+
+.zwei {
+    grid-area: zwei;
+}
+
+.drei {
+    grid-area: drei;
+}
+
+.vier {
+    grid-area: vier;
+}
+
+.fünf {
+    grid-area: fünf;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    color: black;
+    background-color: goldenrod;
+    font-weight: bold;
+    border-radius: 8px;
+    border-color: transparent;
+    padding: 13px 19px;
+    margin-top: 30px;
+
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input {
+    margin-top: 20px;
+    height: 45px;
+    display: block;
+    width: 100%;
+}
+
+textarea {
+    margin-top: 15px;
 }

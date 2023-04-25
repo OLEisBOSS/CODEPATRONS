@@ -54,12 +54,11 @@
          </section>
 
          <section id="services">
+            <div class="background">
             <h1 class="subheader">SERVICES</h1>
-         </section>
-         <div class="underline-div">
-            <hr class="underline">
-         </div>
-
+            <div class="underline-div">
+                 <hr class="underline">
+            </div>
          <div class="grid">
             <article class="one">
                 <i class="fa-solid fa-spider"></i>                
@@ -92,6 +91,45 @@
                 <p>Content management systems such as WordPress are perfect for all kinds of websites, from a brochure website where you want to advertise your services to a member website where you can build communities.</p>
             </article>
          </div>
+        </div>
+        </section>
+
+         <section id="contact">
+            <h1 class="subheader">CONTACT US</h1>
+            <div class="underline-div">
+                <hr class="underline">
+            </div>
+            <h3>For more information on my services, hire me for a project or have a job vacancy you would like me to apply for, please feel free to get in touch.</h3>
+            <form>
+                <div class="form-grid">
+                    <div class="eins">
+                        <label for="name">Full Name *</label>
+                        <input id="name" type="text" name="name" required>
+                    </div>
+                    <div class="zwei">
+                        <label for="number">Phone Number *</label><br>
+                        <input id="number" type="number" name="number" required>
+                    </div>
+                    <div class="drei">
+                        <label for="mail">Email Adress * </label><br>
+                        <input id="mail" type="text" name="mail" required>
+                    </div>
+                    <div class="vier">
+                        <label for="task">I would like to: * </label><br>
+                        <input id="task" type="text" name="task" list="datalist" required>
+                        <datalist id="datalist">
+                            <option>Hire you to build a website</option>
+                            <option>Find more about your services</option>
+                        </datalist>
+                    </div>
+                    <div class="fünf">
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="12"></textarea>
+                    </div>
+                </div>
+                <button>SUBMIT <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </section>
 
 
     </main>
