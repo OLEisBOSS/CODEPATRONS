@@ -1,14 +1,19 @@
+
+:root {
+    --better-white: #e7e7e7;
+}
+
 html {
     margin: 0px 0px;
     box-sizing: border-box;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--better-white);
 }
 
 body {
     margin: 0px 0px;
 }
-
 
 
 /*header */
@@ -37,23 +42,31 @@ header {
     border-bottom: 2px solid goldenrod;
     border-right: 1px solid goldenrod;
     border-left: 1px solid goldenrod;
-}
-
-nav {
-    width: 40%;
-    height: 50px;
-    color: white;
-    float: right;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
+.header1 h1 {
+    padding-left: 2%;
+    color: goldenrod;
+    margin: 0px;
+    text-shadow: 2px 2px var(--better-white), -2px -2px var(--better-white);
+}
+
+nav {
+    color: var(--better-white);
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+}
+
 nav li {
-    display: inline-block;
     line-height: 30px;
     height: 30px;
-    padding: 0px 8%;
+    padding: 0px 4%;
     transition: color 750ms ease-out 0.2s, box-shadow 250ms ease-out, border-left 250ms ease-out;
     border-radius: 8px;
     box-shadow: 0px 2px rgb(253, 249, 249);
@@ -72,14 +85,6 @@ nav li:active {
 
 nav li+li {
     border-left: 1px solid goldenrod;
-}
-.header1 h1 {
-    display: inline-block;
-    padding-left: 2%;
-    color: goldenrod;
-    margin: 0px;
-    line-height: 50px;
-    text-shadow: 2px 2px white, -2px -2px white;
 }
 
 .text-box-container {
@@ -113,7 +118,7 @@ nav li+li {
 
 .text-box h1 {
     text-align: center;
-    color: white;
+    color: var(--better-white);
     font-weight: 700;
     letter-spacing: 3px;
 }
@@ -157,6 +162,7 @@ nav li+li {
     right: 15%;
     transform: translateY(50%);
     padding: 13px 19px;
+    padding-right: 38px;
     text-align: center;
 }
 
@@ -172,11 +178,11 @@ nav li+li {
     transform: scaleX(0);
     transition: transform 750ms;
     z-index: 2;
+    transform-origin: right;
 }
 
 #hire:hover::before {
     transform: scale(1);
-    transform-origin: left;
 }
 
 #hire:hover i {
@@ -194,9 +200,10 @@ nav li+li {
 
 #hire i {
     position: absolute;
-    right: 7px;
+    right: 0px;
     transition: transform 750ms, left 750ms, position 750ms;
     z-index: 10;
+    margin-right: 19px;
 }
 
 .letter {
@@ -246,8 +253,6 @@ nav li+li {
 
 }
 
-
-
 /*about me section */
 
 .subheader{
@@ -291,7 +296,7 @@ nav li+li {
     font-size: 1.2rem;
     line-height: 1.5rem;
     letter-spacing: 1px;
-    padding-bottom: 30px;
+    padding-bottom: 75px;
 }
 
 .clickable {
@@ -336,7 +341,8 @@ nav li+li {
 /*services-grid-section*/
 
 .background {
-    background-color: #f4f3f3;
+    background-color: #1d1b1b;
+    color: var(--better-white);
 }
 
 .grid {
@@ -440,8 +446,9 @@ textarea {
 }
 
 button {
-    display: block;
-    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 16px;
     color: black;
     background-color: goldenrod;
@@ -449,8 +456,45 @@ button {
     border-radius: 8px;
     border-color: transparent;
     padding: 13px 19px;
+    padding-right: 38px;
     margin-top: 30px;
+}
 
+button > i {
+    position: absolute;
+    right: 19px;
+    display: inline-block;
+    z-index: 3;
+    transition: transform 750ms;
+}
+
+button:hover > i {
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+button > p {
+    display: inline;
+}
+
+button::before {
+    content: '';
+    border-radius: 8px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 2;
+    transform: scale(0);
+    background-color: goldenrod;
+    transition: transform 750ms;
+    transform-origin: right;
+}
+
+
+button:hover::before {
+    transform: scale(1);
 }
 
 label {
@@ -462,8 +506,29 @@ input {
     height: 45px;
     display: block;
     width: 100%;
+    border-radius: 8px;
+    border-color: transparent;
 }
 
 textarea {
     margin-top: 15px;
+    border-radius: 8px;
+    border-color: transparent;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 4%;
+    background-color: #1d1b1b;
+    font-size: larger;
+    font-weight: 700;
+    color: var(--better-white);
+}
+
+#flex > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5%;
 }
