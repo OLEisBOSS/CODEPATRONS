@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Codepatrons</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Josefin+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Concert+One&family=Josefin+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/0dc88fe964.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("6w4cGWs3X9pbDGtKF");
+   })();
+</script>
 </head>
 <body>
     <header>
         <div class="header1">
-            <h1>P</h1>
-            <nav>
-                <li><a>HOME</a></li>
-                <li><a>ABOUT US</a></li>
-                <li><a>CONTACT</a></li>
+                <h1>CP</h1>
+                <div class="toggle-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            <nav class="nav">
+                <ul>
+                    <a href="#about-us"><li>ABOUT US</li></a>
+                    <a href="#services"><li>SERVICES</li></a>
+                    <a href="#contact"><li>CONTACT</li></a>
+                </ul>
             </nav>
         </div>
 
@@ -39,7 +57,10 @@
     </header>
 
     <main>
-         <section id="about-me">
+         <section id="about-us" role="">
+            <div>
+                <br>
+            </div>
             <h1 class="subheader">ABOUT US</h1>
             <div class="underline-div">
                  <hr class="underline">
@@ -47,87 +68,77 @@
                 <figure id="figure">
                     <img src="./resources/images/Passfoto.jpg" alt="'beautiful picture of the CEO">
                 </figure>
-                <p>Hello, I'm <a id="clickable" title="Interested in me?">Ole</a>, the CEO of Codepatrons. Our goal is it to create the best website for YOU.
-                    To complete this step we are not only offering highest level in our codes, but also consists our teams of professional photographers for pictures, logos, etc, as well of a lawyer responisble for writing high quality and appealing texts.
-                    So, if you want to have the best quality for an affordable price <a class="clickable" title="Learn more">contact us</a> today!
+                <p>Hello, I'm <a class="clickable" title="Interested in me?">Ole</a>, CEO of Codepatrons, and our mission is to create the perfect website for you. Our team is dedicated to delivering the highest quality of code, along with professional photography services for stunning visuals, and expert copywriting from our in-house legal professional to create compelling text. We offer unbeatable value for an exceptional product, so why wait? Contact us today to get started on your dream website! <a href='#about-us' class="clickable" title="Learn more">contact us</a> today!
                 </p>
          </section>
 
          <section id="services">
+            <br>
             <div class="background">
-            <h1 class="subheader">SERVICES</h1>
+            <h1 class="special-subheader">SERVICES</h1>
             <div class="underline-div">
                  <hr class="underline">
             </div>
          <div class="grid">
             <article class="one">
                 <i class="fa-solid fa-spider"></i>                
-                <h3>CREATIVE WEB DESIGN</h3>
-                <p>We create real, unique, beautiful and compelling website and application designs.</p>
+                <h3>Eye-catching designs</h3>
+                <p>Your website will stand out from the crowd with custom-designed layouts tailored to your brand and audience.</p>
             </article>
             <article class="two">
                 <i class="fa-solid fa-mobile"></i>
-                <h3>RESPONSIVE WEB DEVELOPMENT</h3>
-                <p>All of or websites are completely responsive and will look fantastic on any sized screen or device, from mobile to large monitors.</p>
+                <h3>Interactive experiences</h3>
+                <p>Engage your visitors with interactive features such as animations, sliders, and forms that enhance the user experience and encourage interaction.</p>
             </article>
             <article class="three">
                 <i class="fa-solid fa-desktop"></i>
-                <h3>WEB APPLICATIONS</h3>
-                <p>We can build bespoke web applications for all needs, from a simple customer relations system to a complex recruitment management systems. The options are unlimited.</p>
+                <h3>Responsive Design</h3>
+                <p>Your website will be optimized for all screen sizes, from desktops to smartphones, ensuring a seamless user experience for everyone.</p>
             </article>
             <article class="four">
                 <i class="fa-solid fa-rocket"></i>
-                <h3>FULL STACK DEVELOPMENT</h3>
-                <p>As a full stack developer, I can take your idea from a design to a fully functioning web application, complete with administration area.</p>
-            </article>
-            <article class="five">
-                <i class="fa-solid fa-store"></i>
-                <h3>E-COMMERCE STORES</h3>
-                <p>If your looking for a website where you can sell your products whether it be 2-3 products or a company who sells 500 different products, we can help with that.</p>
-            </article>
-            <article class="six">
-                <i class="fa-brands fa-wordpress"></i>
-                <h3>WORDPRESS / CMS</h3>                
-                <p>Content management systems such as WordPress are perfect for all kinds of websites, from a brochure website where you want to advertise your services to a member website where you can build communities.</p>
+                <h3>Full-stack capabilities</h3>
+                <p>Utilizing the efficiency and flexibility of WordPress to develop a customized website tailored to your specific needs, but likewise capable of building a website from scratch.</p>
             </article>
          </div>
         </div>
         </section>
 
          <section id="contact">
+            <br>
             <h1 class="subheader">CONTACT US</h1>
             <div class="underline-div">
                 <hr class="underline">
             </div>
-            <h3>For more information on my services, hire me for a project or have a job vacancy you would like me to apply for, please feel free to get in touch.</h3>
-            <form>
+            <h3>If you're interested in hiring me for a project or would like more information about my services, don't hesitate to contact me.</h3>
+            <form onsubmit="sendMail()">
                 <div class="form-grid">
                     <div class="eins">
-                        <label for="name">Full Name *</label>
-                        <input id="name" type="text" name="name" required>
+                        <label for="name">Full Name:</label>
+                        <input class='all-input' id="name" type="text" pattern="[A-Za-z]+ [A-Za-z]+" required>
                     </div>
                     <div class="zwei">
-                        <label for="number">Phone Number *</label><br>
-                        <input id="number" type="number" name="number" required>
+                        <label for="email">Email Adress:</label><br>
+                        <input class='all-input' type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
                     </div>
                     <div class="drei">
-                        <label for="mail">Email Adress * </label><br>
-                        <input id="mail" type="text" name="mail" required>
+                        <label for="number">Phone Number:</label><br>
+                        <input class='all-input' id="number" type="number" name="number" min="9" required>
                     </div>
                     <div class="vier">
-                        <label for="task">I would like to: * </label><br>
-                        <input id="task" type="text" name="task" list="datalist" required>
+                        <label for="task">I would like to:</label><br>
+                        <input class='all-input' id="task" type="text" name="task" list="datalist" required>
                         <datalist id="datalist">
-                            <option>Hire you to build a website</option>
-                            <option>Find more about your services</option>
+                            <option>Hire you to build me a website</option>
+                            <option>Discover additional information about your services.</option>
                         </datalist>
                     </div>
                     <div class="fünf">
-                            <label for="message">Message:</label><br>
-                            <textarea id="message" name="message" rows="12"></textarea>
+                            <label for="message">Message [optional]:</label><br>
+                            <textarea class='all-input' id="message" name="message" rows="12"></textarea>
                     </div>
                 </div>
-                <button><p>SUBMIT</p> <i id='arrow' class="fa-solid fa-arrow-right"></i></button>
+                <button id='button'><p>SUBMIT</p> <i id='arrow' class="fa-solid fa-arrow-right"></i></button>
             </form>
         </section>
 
@@ -137,9 +148,8 @@
     <footer>
         <div id="flex">
             <p>Ole Boss 2023</p>
-            <div style="display: flex;">
+            <div id='inner-flex' style="display: flex;">
                 <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-instagram"></i>
             </div>
             <p>Smoke Policy</p>
         </div>
