@@ -223,6 +223,7 @@ header {
     padding: 13px 19px;
     padding-right: 38px;
     text-align: center;
+    color: black;
 }
 
 #hire::before {
@@ -681,7 +682,8 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 493px) {
+
     .text-box {
         width: 70%;
     }
