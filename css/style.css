@@ -76,6 +76,22 @@ header {
     transition: height 500ms ease-in;
 }
 
+#logo-container {
+    height: 11vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logo-figure {
+    margin: 0px 0px 0px 20px;
+    height: 100%;
+}
+
+#logo-figure img {
+    height: 100%;
+}
+
 .toggle-button {
     top: 0px;
     position: absolute;
@@ -688,7 +704,7 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 493px) {
+@media only screen and (max-width: 540px) {
 
     .text-box {
         width: 70%;
@@ -701,6 +717,11 @@ textarea {
     .header1 {
         flex-direction: column;
         align-items: flex-start;
+        height: 70px;
+    }
+
+    #logo-container {
+        position: absolute;
         height: 70px;
     }
 
@@ -809,14 +830,4 @@ textarea {
         padding-top: 50px;
     }
     
-}
-
-@media only screen and (max-width: 400px) {
-    .text-box {
-        width: 80%;
-    }
-
-    #about-us p {
-        width: 80%;
-    }   
 }
