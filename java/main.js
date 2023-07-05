@@ -22,7 +22,7 @@ const enhance = id => {
 };
 
 enhance('span-2')
-/*
+
 const ole = document.getElementById('clickable');
 const figure = document.getElementById('figure')
 
@@ -34,17 +34,17 @@ ole.addEventListener('mouseover', (e) => {
     setTimeout(() => {
         figure.style.left = `${Math.round(aX)}px`;
         figure.style.top = `${Math.round(aY -110)}px`;
-        figure.style.display = 'block'; 
+        figure.style.display = 'block';
     }, 600); 
 });
 
 ole.addEventListener('mouseout', (e) => {
     setTimeout(() => {
-        figure.style.display = 'none'
+        figure.style.display = 'none';
     }, 600)
 })
 
-*/
+
 
 //send Mail
 
@@ -75,3 +75,14 @@ function sendMail(event) {
 
 // Add event listener to form submit event
 document.querySelector('form').addEventListener('submit', sendMail);
+
+const impressum = document.getElementById('impressum-container');
+const impressumTitel = document.getElementById('impressum');
+
+impressumTitel.addEventListener('click', (e) => {
+    if (impressum.style.display === 'none') {
+    impressum.style.display = 'block';
+    } else {
+        impressum.style.display = 'none'
+    }
+})

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/png" href="./resources/images/Codepatrons logo favicon.png">
     <title>Codepatrons</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,6 @@
     <meta name="keywords" content="Codepatrons, Website erstellen, Wordpress, Onlineshop, Programmierer, HTML, CSS, JavaScript">
     <meta name="description" content="Web developer Webentwickler">
     <meta name="author" content="Ole">
-
-
-
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Concert+One&family=Josefin+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -27,7 +25,7 @@
         <div class="header1">
                 <div id="logo-container">
                     <figure id="logo-figure">
-                        <img src="../../../../Downloads/Codepatrons logo(1) (black) (real-cut).jpg">
+                        <img src="./resources/images/Codepatrons logo(1) (black) (real-cut).jpg">
                     </figure>
                 </div>
                 <div class="toggle-button">
@@ -40,6 +38,7 @@
                     <a href="#about-us"><li>ABOUT US</li></a>
                     <a href="#services"><li>SERVICES</li></a>
                     <a href="#contact"><li>CONTACT</li></a>
+                    <figure class='flag'><a id="a-unset" href="./german-index.html"><img src="./resources/images/9zmgYZYUB6cr1iIXFMPvU9pYgf4-modified.png"></a></figure>
                 </ul>
             </nav>
         </div>
@@ -58,20 +57,22 @@
     </header>
 
     <main>
-         <section id="about-us" role="">
+        <section id="about-us" role="">
             <div>
                 <br>
             </div>
             <h1 class="subheader">ABOUT US</h1>
             <div class="underline-div">
-                 <hr class="underline">
+                <hr class="underline">
             </div>
-                <figure id="figure">
-                    <img src="./resources/images/Passfoto.jpg" alt="'beautiful picture of the CEO">
-                </figure>
-                <p>Hello, I'm <a class="clickable" title="Interested in me?">Ole</a>, CEO of Codepatrons, and our mission is to create the perfect website for you. Our team is dedicated to delivering the highest quality of code, along with professional photography services for stunning visuals, and expert copywriting from our in-house legal professional to create compelling text. We offer unbeatable value for an exceptional product, so why wait? Contact us today to get started on your dream website! <a href='#about-us' class="clickable" title="Learn more">contact us</a> today!
-                </p>
-         </section>
+            <p>
+                Hello, I'm <a id='clickable' class="clickable">Ole</a>, CEO of Codepatrons, and our mission is to create the perfect website for you. Our team is dedicated to delivering the highest quality of code, along with professional photography services for stunning visuals, and expert copywriting from our in-house legal professional to create compelling text. We offer unbeatable value for an exceptional product, so why wait? <a href='#contact' class="clickable" title="Learn more">Contact us</a> to get started on your dream website!
+            </p>
+            <figure id="figure">
+                <img src="./resources/images/Passfoto.jpg" alt=" picture of the CEO">
+            </figure>
+        </section>
+        
 
          <section id="services">
             <br>
@@ -99,8 +100,7 @@
             <article class="four">
                 <i class="fa-solid fa-rocket"></i>
                 <h3>Full-stack capabilities</h3>
-                <p>Utilizing the efficiency and flexibility of WordPress to develop a customized website tailored to your specific needs, but likewise capable of building a website from scratch.</p>
-            </article>
+                <p>We utilize the efficiency and flexibility of WordPress combined with self-created HTML, CSS, and JavaScript code to develop a customized website according to your specific requirements - from your own homepage to an online shop!</p>            </article>
          </div>
         </div>
         </section>
@@ -111,7 +111,7 @@
             <div class="underline-div">
                 <hr class="underline">
             </div>
-            <h3>If you're interested in hiring me for a project or would like more information about my services, don't hesitate to contact me.</h3>
+            <h3>If you're interested in hiring us for a project or would like more information about our services, don't hesitate to contact us.</h3>
             <form onsubmit="sendMail()">
                 <div class="form-grid">
                     <div class="eins">
@@ -131,7 +131,7 @@
                         <input class='all-input' id="task" type="text" name="task" list="datalist" required>
                         <datalist id="datalist">
                             <option>Hire you to build me a website</option>
-                            <option>Discover additional information about your services.</option>
+                            <option>Discover additional information about our services.</option>
                         </datalist>
                     </div>
                     <div class="fünf">
@@ -146,9 +146,32 @@
     </main>
 
     <footer>
+        <div class="relative">
+        <div id="impressum-container">
+            <h1>Impressum</h1>
+            <h3>Information according to § 5 TMG:</h3>
+
+            <p>First name, Last name: Ole Pawlowski<br><br>
+
+            Address: Greiteler Gärten 14<br><br>
+
+            ZIP code: 33102<br><br>
+
+            </p>
+
+            <h3>Contact</h3>
+
+            <p>Phone: 017662465497<br><br>
+
+            Email: ole.p.pawlowski@gmail.com <br><br>
+
+            VAT identification number: DE47783285
+        </p>
+        </div>
         <div id="flex">
             <p>Codepatrons 2023</p>
-            <p>Smoke Policy</p>
+            <p id="impressum">Impressum</p>
+            </div>
         </div>
     </footer>
 
